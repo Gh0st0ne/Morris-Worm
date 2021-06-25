@@ -1,0 +1,7 @@
+The below files have been written in some capacity but need to be unified in one single program
+
+    1. PORT SCANNER AND APPLICATION BANNER GRABBING (MAYBE ADD THREADING AND NMAP FOR MORE COVERAGE)
+
+    2. REMOTE SSH ACCESS, INTERACTION AND AN ARMY OF SSH BOTS! (BOTNET)
+
+    3. FTP SERVER SCANNER, FILE FINDER, FILE REPLACER
