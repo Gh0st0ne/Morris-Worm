@@ -148,7 +148,7 @@ class FTP_Cell:
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(usage='python3 ftp_mass_compromise.py HOST_IP[S] -r INJECT_PAGE [-f USERPASS_FILE]')
+    parser = argparse.ArgumentParser(usage='python3 MW_FTP.py HOST_IP[S] -r INJECT_PAGE [-f USERPASS_FILE]')
     parser.add_argument('host_IPs', type=str, metavar='HOST_IP[S]', nargs='+', help='specify one or more target hosts separated by commas (no spaces)')
     parser.add_argument('-r', type=str, metavar='INJECT_PAGE', required=True, help='specify an injection page')
     parser.add_argument('-f', type=str, metavar='USERPASSWORD_FILE', help='specify user/password file for brute-force attack')
