@@ -1,6 +1,5 @@
-import argparse, threading
+import argparse, threading, time
 from pexpect import pxssh
-import time
 
 '''
 With recon complete and open access ports found we can move to the second phase of the attack. Gaining remote access.
@@ -46,7 +45,7 @@ def connect(host, user, password, release=True):
 # potentially weave this into the botnet file??????
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(usage='python3 ssh_brute.py TARGET_HOST -u USERNAME -f PASSWORD_FILE')
+    parser = argparse.ArgumentParser(usage='python3 MW_ssh_brute.py TARGET_HOST -u USERNAME -f PASSWORD_FILE')
     parser.add_argument('host', type=str, metavar='TARGET_HOST', help="specify target host's IP address")
     parser.add_argument('-un', type=str, metavar='USERNAME', required=True, help='specify the user name')
     parser.add_argument('-pf', type=str, metavar='PASSWORD_FILE', required=True, help='specify password file name')
