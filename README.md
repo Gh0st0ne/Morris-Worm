@@ -96,6 +96,21 @@ usage: python3 MW_FTP.py HOST_IP[S] -r INJECT_PAGE [-f USERPASS_FILE]
 MW_FTP.py: error: the following arguments are required: HOST_IP[S], -r
 ```
 
+An example of an IP and port scan.
+```sh
+[+] Scan results for: hostXXXXXXXXXXXXXXXX
+[+] 80/tcp open
+        [>] HTTP/1.0 501 Not Implemented
+Server: httpd
+Date: Tue, 10 Aug 2021 10:32:07 GMT
+Content-Type: text
+[-] 200/tcp closed
+[-] 100/tcp closed
+[+] 81.154.128.200 tcp/80 open
+[+] 81.154.128.200 tcp/100 closed
+[+] 81.154.128.200 tcp/200 closed
+```
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
